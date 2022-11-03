@@ -1,25 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Greet from './components/Greet';
+import { Component } from 'react';
+import Hello from './components/Hello';
+import MyComponent from './components/Welcome';
 
-function App() {
-  return (
+class App extends Component{
+  render() {
+    return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      {/* component as the custom html tag */}
+     {/* <Greet/>
+
+     <MyComponent/> */}
+     <Hello/>
+     
     </div>
   );
+}
 }
 
 export default App;
